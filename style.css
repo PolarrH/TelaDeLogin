@@ -1,0 +1,98 @@
+:root {
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #4f46e5;
+    --border: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    background: linear-gradient(135deg, #eef2ff 0%, var(--bg) 100%);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.content {
+    width: min(700px, 100%);
+    margin: 0 0 20px;
+    padding: 24px;
+    background-color: var(--card);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+nav {
+    width: min(700px, 100%);
+    padding: 24px;
+    background-color: var(--card);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+nav h2 {
+    margin: 0 0 12px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: var(--text);
+    background-color: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .content,
+    nav {
+        padding: 18px;
+    }
+}
+
