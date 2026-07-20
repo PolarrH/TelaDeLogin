@@ -11,11 +11,13 @@
 .timer {
   text-align: center;
   font-size: 3em;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   justify-content: center;
+  align-items: center;
   display: flex;
   font-family: Arial, sans-serif;
   outline: 2px solid #000;
+  width: 300px;
   border-radius: 10px;
   padding: 20px;
   background-color: #f0f0f0;
@@ -60,7 +62,7 @@
 }
 
 .settings > label {
-  color: #333;
+  color: #000000;
   font-weight: 600;
   min-width: 160px;
   text-align: right;
@@ -89,7 +91,7 @@
 
 .settings > input[type="number"]:focus {
   outline: none;
-  border-color: #7aa7ff;
+  border-color: #031436;
   box-shadow: 0 0 0 4px rgba(59,130,246,0.08);
 }
 
